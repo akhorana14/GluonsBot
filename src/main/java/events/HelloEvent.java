@@ -13,7 +13,12 @@ public class HelloEvent extends ListenerAdapter {
         {
             if(message.equals("!help"))
             {
-                event.getChannel().sendMessage("```**Hello, I'm GluonsBot!**\nBelow you can see all the commands I know.\n**Have a nice day!**\n\n!help - Displays help command\nhsajsakdaslhjsk```").queue();
+                event.getChannel().sendMessage("```**Hello, I'm GluonsBot!**\n" +
+                        "Below you can see all the commands I know.\n" +
+                        "Have a nice day!\n\n" +
+                        "" +
+                        "!help - Displays help command\n" +
+                        "hsajsakdaslhjsk```").queue();
             }
             if(message.equals("!ping"))
             {
